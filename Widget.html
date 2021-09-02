@@ -1,0 +1,364 @@
+<div class="jimu-widget-frame jimu-container" id="dijit__WidgetBase_3" widgetid="dijit__WidgetBase_3">
+    <div style="width:100%;height:100%;min-width:230px;min-height:136px;" class="jimu-widget-directions jimu-widget" id="_7" widgetid="_7" data-widget-name="Directions" aria-label="Directions" tabindex="null" role="">
+        <div data-dojo-attach-point="directionController">
+            <div class="simpleDirections WAB-508" role="presentation" id="esri_dijit_Directions_0" widgetid="esri_dijit_Directions_0">
+                <div data-dojo-attach-point="_widgetContainer" class="esriDirectionsContainer esriStopsAdd esriStopsOptionsEnabled" role="presentation">
+                    <div class="esriStopsContainer" role="presentation">
+                        <div id="search-source-container" class="esriSearchSourceContainer" data-dojo-attach-point="_searchSourceContainerNode" style="display: none;">
+                            <div data-dojo-attach-point="_searchSourceSelectorContainer"></div>
+                        </div>
+                        <div class="esriStopsTableContainer">
+                            <table class="esriStops dojoDndSource dojoDndTarget dojoDndContainer" data-dojo-attach-point="_dndNode">
+                                <tr class="esriStop dojoDndItem dojoDndItemAnchor" style="" id="dojoUnique1"><td class="dojoDndHandle esriStopDnDHandleHidden"></td>
+                                    <td class="esriStopIconColumn">
+                                        <div class="esriStopIcon dojoDndHandle" data-center-at="true">1</div>
+                                    </td>
+                                    <td class="esriStopGeocoderColumn">
+                                        <div role="presentation" class="arcgisSearch esriInnerGeocoder" id="esri_dijit_Search_2" widgetid="esri_dijit_Search_2" style="display: block;">
+                                            <div role="presentation" class="searchGroup" data-dojo-attach-point="containerNode">
+                                                <div data-dojo-attach-point="expandNode" class="searchExpandContainer">
+                                                    <div class="searchAnimate">
+                                                        <div role="button" title="Search in" id="esri_dijit_Search_2_menu_button" class="searchBtn searchToggle" tabindex="0" data-dojo-attach-point="sourcesBtnNode">
+                                                            <span aria-hidden="true" role="presentation" class="searchIcon esri-icon-down-arrow"></span><span class="sourceName" data-dojo-attach-point="sourceNameNode">ArcGIS World Geocoding Service</span>
+                                                        </div>
+                                                        <div class="searchInputGroup">
+                                                            <form data-dojo-attach-point="formNode">
+                                                                <input maxlength="128" autocomplete="off" type="text" tabindex="0" class="searchInput firstFocusNode" value="" aria-haspopup="true" id="esri_dijit_Search_2_input" data-dojo-attach-point="inputNode" role="textbox" placeholder="Find address or place" title="Find address or place">
+                                                            </form>
+                                                            <div role="button" class="searchClear" tabindex="0" data-dojo-attach-point="clearNode">
+                                                                <span aria-hidden="true" class="searchIcon esri-icon-close searchClose"></span>
+                                                                <span aria-hidden="true" class="searchIcon esri-icon-loading-indicator searchSpinner"></span>
+                                                            </div>
+                                                            <div data-dojo-attach-point="suggestionsNode" class="searchMenu suggestionsMenu"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="button" title="Search" class="searchBtn searchSubmit" tabindex="0" data-dojo-attach-point="submitNode">
+                                                    <span aria-hidden="true" role="presentation" class="searchIcon esri-icon-search"></span>
+                                                    <span class="searchButtonText">Search</span>
+                                                </div>
+                                                <div data-dojo-attach-point="sourcesNode" class="searchMenu sourcesMenu"></div>
+                                                <div data-dojo-attach-point="noResultsMenuNode" class="searchMenu noResultsMenu"></div>
+                                                <div class="searchClearFloat"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="esriStopIconRemoveColumn">
+                                        <div class="esriStopIconRemoveHidden" role="button" data-remove="true"></div>
+                                    </td>
+                                    <td data-reverse-td="true" rowspan="2" class="esriStopReverseColumn">
+                                        <div role="button" class="esriStopsReverse" data-reverse-stops="true" title="Reverse directions"></div>
+                                    </td>
+                                </tr>
+                                <tr class="esriStop dojoDndItem" style="" id="dojoUnique2">
+                                    <td class="dojoDndHandle esriStopDnDHandleHidden"></td>
+                                    <td class="esriStopIconColumn">
+                                        <div class="esriStopIcon dojoDndHandle" data-center-at="true">2</div>
+                                    </td>
+                                    <td class="esriStopGeocoderColumn">
+                                        <div role="presentation" class="arcgisSearch esriInnerGeocoder" id="esri_dijit_Search_3" widgetid="esri_dijit_Search_3" style="display: block;">
+                                            <div role="presentation" class="searchGroup" data-dojo-attach-point="containerNode">
+                                                <div data-dojo-attach-point="expandNode" class="searchExpandContainer">
+                                                    <div class="searchAnimate">
+                                                        <div role="button" title="Search in" id="esri_dijit_Search_3_menu_button" class="searchBtn searchToggle" tabindex="0" data-dojo-attach-point="sourcesBtnNode">
+                                                            <span aria-hidden="true" role="presentation" class="searchIcon esri-icon-down-arrow"></span>
+                                                            <span class="sourceName" data-dojo-attach-point="sourceNameNode">ArcGIS World Geocoding Service</span>
+                                                        </div>
+                                                        <div class="searchInputGroup">
+                                                            <form data-dojo-attach-point="formNode">
+                                                                <input maxlength="128" autocomplete="off" type="text" tabindex="0" class="searchInput" value="" aria-haspopup="true" id="esri_dijit_Search_3_input" data-dojo-attach-point="inputNode" role="textbox" placeholder="Find address or place" title="Find address or place">
+                                                            </form>
+                                                            <div role="button" class="searchClear" tabindex="0" data-dojo-attach-point="clearNode">
+                                                                <span aria-hidden="true" class="searchIcon esri-icon-close searchClose"></span>
+                                                                <span aria-hidden="true" class="searchIcon esri-icon-loading-indicator searchSpinner"></span>
+                                                            </div>
+                                                            <div data-dojo-attach-point="suggestionsNode" class="searchMenu suggestionsMenu"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div role="button" title="Search" class="searchBtn searchSubmit" tabindex="0" data-dojo-attach-point="submitNode">
+                                                    <span aria-hidden="true" role="presentation" class="searchIcon esri-icon-search"></span>
+                                                    <span class="searchButtonText">Search</span>
+                                                </div>
+                                                <div data-dojo-attach-point="sourcesNode" class="searchMenu sourcesMenu"></div>
+                                                <div data-dojo-attach-point="noResultsMenuNode" class="searchMenu noResultsMenu"></div>
+                                                <div class="searchClearFloat"></div>
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="esriStopIconRemoveColumn">
+                                        <div class="esriStopIconRemoveHidden" role="button" data-remove="true"></div>
+                                    </td>
+                                </tr>
+                            </table>
+                            <div class="esriStopsTableCover" data-dojo-attach-point="_stopsTableCover" style="display: none;"></div>
+                        </div>
+                        <div class="esriClear"></div>
+                        <!--<div class="esriStopsButtons">-->
+                            <!--<div class="esriStopsAddDestination">-->
+                                <!--<div tabindex="0" role="button" data-dojo-attach-point="_activateButtonNode" title="Add stops by clicking on the map or modify route with waypoints" class="esriActivateButton esriDirectionsButton esriDirectionsTabButton esriDirectionsPressedButton" data-blur-on-click="true" style="display: inline-block;"></div>-->
+                                <!--<div tabindex="0" role="button" data-dojo-attach-point="_lineBarrierButtonNode" title="Barriers" class="esriLineBarrierButton esriDirectionsButton esriDirectionsTabButton" data-blur-on-click="true" style="display: inline-block;"></div>-->
+                                <!--<div role="button" tabindex="0" class="esriLinkButton esriStopsAddDestinationBtn" data-dojo-attach-point="_addDestinationNode" data-blur-on-click="true" style="display: inline;">Add</div>-->
+                            <!--</div>-->
+                            <!--<div class="esriTravelModesContainer" data-dojo-attach-point="_travelModeContainerNode" style="display: block;">-->
+                                <!--<table class="esriTravelModesDDL dijitSelectFixedWidth dijitValidationTextBoxFixedWidth dijitSelect dijitValidationTextBox" data-dojo-attach-point="_buttonNode,tableNode,focusNode,_popupStateNode" cellspacing="0" cellpadding="0" role="listbox" aria-haspopup="true" tabindex="0" id="dijit_form_Select_0" widgetid="dijit_form_Select_0" aria-expanded="false" aria-invalid="false" style="user-select: none; width: 100%;" title="Models the movement of cars and other similar small automobiles, such as pickup trucks, and finds solutions that optimize travel time. Travel obeys one-way roads, avoids illegal turns, and follows other rules that are specific to cars. When you specify a start time, dynamic travel speeds based on traffic are used where it is available." popupactive="true" aria-owns="dijit_form_Select_0_menu">-->
+                                    <!--<tbody role="presentation">-->
+                                    <!--<tr role="presentation">-->
+                                        <!--<td class="dijitReset dijitStretch dijitButtonContents" role="presentation">-->
+                                            <!--<div class="dijitReset dijitInputField dijitButtonText" data-dojo-attach-point="containerNode,textDirNode" role="presentation">-->
+													<!--<span role="option" aria-selected="true" class="dijitReset dijitInline dijitSelectLabel dijitValidationTextBoxLabel ">-->
+														<!--<div class="esriTravelModesDirectionsIcon esriTravelModesTypeDrivingTime">&nbsp;</div>-->
+														<!--<div class="esriTravelModesTypeName" title="Models the movement of cars and other similar small automobiles, such as pickup trucks, and finds solutions that optimize travel time. Travel obeys one-way roads, avoids illegal turns, and follows other rules that are specific to cars. When you specify a start time, dynamic travel speeds based on traffic are used where it is available.">Driving Time</div>-->
+													<!--</span>-->
+                                            <!--</div>-->
+                                            <!--<div class="dijitReset dijitValidationContainer">-->
+                                                <!--<input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation">-->
+                                            <!--</div>-->
+                                            <!--<input type="hidden" data-dojo-attach-point="valueNode" value="Driving Time" aria-hidden="true">-->
+                                        <!--</td>-->
+                                        <!--<td class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="titleNode" role="presentation">-->
+                                            <!--<input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="presentation">-->
+                                        <!--</td>-->
+                                    <!--</tr>-->
+                                    <!--</tbody>-->
+                                <!--</table>-->
+                            <!--</div>-->
+                            <!--<div tabindex="0" role="button" class="esriLinkButton startTimeMenuButton" data-blur-on-click="true" data-dojo-attach-point="_startTimeButtonNodeContainer">-->
+                                <!--<div data-dojo-attach-point="_startTimeButtonNode">-->
+                                    <!--<span data-dojo-attach-point="_startTimeButtonLabel">Leave Now</span>-->
+                                    <!--<div data-dojo-attach-point="_startTimeDDLArrow" class="esriDirectionsDDLArrow"></div>-->
+                                <!--</div>-->
+                                <!--<div class="startTimeMenu" data-dojo-attach-point="_startTimeMenu">-->
+                                    <!--<ul role="menu">-->
+                                        <!--<li data-dojo-attach-point="_startTimeMenuLeaveNow" tabindex="0" class="esriRouteZoom startTimeMenuItem" role="menuitemradio" aria-checked="true">Leave Now</li>-->
+                                        <!--<li data-dojo-attach-point="_startTimeMenuDepartAt" tabindex="0" class="esriRouteZoom startTimeMenuItem" role="menuitemradio">Depart At</li>-->
+                                        <!--<li data-dojo-attach-point="_startTimeMenuNone" tabindex="0" class="esriRouteZoom startTimeMenuItem" role="menuitemradio">Time Unspecified</li>-->
+                                    <!--</ul>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                            <!--<div tabindex="0" role="button" class="esriLinkButton esriStopsOptionsButton" data-dojo-attach-point="_optionsButtonNode" data-blur-on-click="true">Options</div>-->
+                            <!--<div class="esriClear"></div>-->
+                            <!--<div class="departAtContainer" data-dojo-attach-point="_departAtContainer">-->
+                                <!--<div class="dijit dijitReset dijitInline dijitLeft dijitTextBox dijitComboBox dijitTimeTextBox dijitValidationTextBox" id="widget_esri_dijit_Directions_0_directionsDepartAtTime" role="combobox" aria-haspopup="true" data-dojo-attach-point="_popupStateNode" widgetid="esri_dijit_Directions_0_directionsDepartAtTime">-->
+                                    <!--<div class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="_buttonNode" role="presentation">-->
+                                        <!--<input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="button presentation" aria-hidden="true">-->
+                                    <!--</div>-->
+                                    <!--<div class="dijitReset dijitValidationContainer">-->
+                                        <!--<input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation">-->
+                                    <!--</div>-->
+                                    <!--<div class="dijitReset dijitInputField dijitInputContainer">-->
+                                        <!--<input class="dijitReset dijitInputInner" type="text" autocomplete="off" data-dojo-attach-point="textbox,focusNode" role="textbox" tabindex="0" id="esri_dijit_Directions_0_directionsDepartAtTime" aria-required="true" value="02:21">-->
+                                        <!--<input type="hidden">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                                <!--<div class="dijit dijitReset dijitInline dijitLeft dijitTextBox dijitComboBox dijitDateTextBox dijitValidationTextBox" id="widget_esri_dijit_Directions_0_directionsDepartAtDate" role="combobox" aria-haspopup="true" data-dojo-attach-point="_popupStateNode" widgetid="esri_dijit_Directions_0_directionsDepartAtDate">-->
+                                    <!--<div class="dijitReset dijitRight dijitButtonNode dijitArrowButton dijitDownArrowButton dijitArrowButtonContainer" data-dojo-attach-point="_buttonNode" role="presentation">-->
+                                        <!--<input class="dijitReset dijitInputField dijitArrowButtonInner" value="▼ " type="text" tabindex="-1" readonly="readonly" role="button presentation" aria-hidden="true">-->
+                                    <!--</div>-->
+                                    <!--<div class="dijitReset dijitValidationContainer">-->
+                                        <!--<input class="dijitReset dijitInputField dijitValidationIcon dijitValidationInner" value="Χ " type="text" tabindex="-1" readonly="readonly" role="presentation">-->
+                                    <!--</div>-->
+                                    <!--<div class="dijitReset dijitInputField dijitInputContainer">-->
+                                        <!--<input class="dijitReset dijitInputInner" type="text" autocomplete="off" data-dojo-attach-point="textbox,focusNode" role="textbox" tabindex="0" id="esri_dijit_Directions_0_directionsDepartAtDate" aria-required="true" value="8/31/2021">-->
+                                        <!--<input type="hidden">-->
+                                    <!--</div>-->
+                                <!--</div>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div role="presentation" class="esriStopsOptionsMenu" data-dojo-attach-point="_optionsMenuNode">
+                            <div class="esriOptionsCheckboxes">
+                                <ul>
+                                    <li class="esriFindOptimalOrderOption" data-dojo-attach-point="_findOptimalOrderItemNode" style="display: none;">
+                                        <input tabindex="0" data-dojo-attach-point="_findOptimalOrderNode" type="checkbox" id="esri_dijit_Directions_0_find_optimal_order">
+                                        <label for="esri_dijit_Directions_0_find_optimal_order">Optimize order</label>
+                                    </li>
+                                    <li class="esriReturnToStartOption" data-dojo-attach-point="_returnToStartItemNode" style="display: block;">
+                                        <input tabindex="0" data-dojo-attach-point="_returnToStartNode" type="checkbox" id="esri_dijit_Directions_0_stopsReturnToStart">
+                                        <label for="esri_dijit_Directions_0_stopsReturnToStart">Return to start</label>
+                                    </li>
+                                    <li class="esriUseTrafficOption" data-dojo-attach-point="_useTrafficItemNode" title="As of now" style="display: none;">
+                                        <input tabindex="0" data-dojo-attach-point="_useTrafficNode" type="checkbox" id="esri_dijit_Directions_0_stopsUseTraffic">
+                                        <label for="esri_dijit_Directions_0_stopsUseTraffic">Show traffic</label>
+                                        <a data-dojo-attach-point="_trafficAvailabilityButton" style="display: inline-block;" href="http://www.arcgis.com/home/item.html?id=b7a893e8e1e04311bd925ea25cb8d7c7" target="_blank">
+                                            <div class="esriTrafficAvailabilityButton" title="See availability"></div>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="esriOptionsToggleContainer">
+                                <div class="esriOptionsUnitsContainer" data-dojo-attach-point="_agolDistanceUnitsNode" style="display: block;">
+                                    <div tabindex="0" role="button" class="esriOptionsUnitsMi esriDirectionsButton" data-dojo-attach-point="_useMilesNode" data-blur-on-click="true">mi</div>
+                                    <div tabindex="0" role="button" class="esriOptionsUnitsKm esriDirectionsButton esriDirectionsTabLastButton esriDirectionsPressedButton" data-dojo-attach-point="_useKilometersNode" data-blur-on-click="true">km</div>
+                                    <div class="esriClear"></div>
+                                </div>
+                                <div class="esriClear"></div>
+                            </div>
+                            <div class="esriClear"></div>
+                        </div>
+                        <div class="esriStopsGetDirectionsContainer">
+                            <div class="getDirectionsBtnContainer">
+                                <div tabindex="0" role="button" class="esriDirectionsButton esriStopsGetDirections" data-dojo-attach-point="_getDirectionsButtonNode" data-blur-on-click="true">Get Directions</div>
+                                <div tabindex="0" role="button" class="esriLinkButton esriStopsClearDirections lastFocusNode" data-dojo-attach-point="_clearDirectionsButtonNode" data-blur-on-click="true" style="display: inline-block;">Clear</div>
+                            </div>
+                            <div class="savePrintBtnContainer" data-dojo-attach-point="_savePrintBtnContainer" style="display: none;">
+                                <div tabindex="0" role="button" class="esriResultsSave esriDirectionsButton esriDirectionsTabButton" data-blur-on-click="true" data-dojo-attach-point="_saveMenuButton" title="Save and share route" style="display: inline-block;"></div>
+                                <div tabindex="0" role="button" class="esriResultsPrint esriDirectionsButton esriDirectionsTabButton" data-blur-on-click="true" data-dojo-attach-point="_printButton" title="Print" style="display: inline-block;"></div>
+                            </div>
+                        </div>
+                        <div role="presentation" class="esriStopsOptionsMenu esriSaveContainer" data-dojo-attach-point="_saveMenuNode" style="display: none;">
+                            <div class="esriLayerNameLabel">Result layer name</div>
+                            <input type="text" data-dojo-attach-point="_outputLayerContainer">
+                            <div data-dojo-attach-point="_folderSelectorContainer"></div>
+                            <div tabindex="0" role="button" class="esriDirectionsButton esriSaveButton esriDisabledDirectionsButton" data-dojo-attach-point="_saveButton" data-blur-on-click="true">Save</div>
+                            <div tabindex="0" role="button" class="esriLinkButton esriSaveAsButton" data-dojo-attach-point="_saveAsButton" data-blur-on-click="true" style="display: none;">Save as new</div>
+                        </div>
+                    </div>
+                    <div class="esriClear"></div>
+                    <div data-dojo-attach-point="_msgNode" role="presentation"></div>
+                    <div class="esriResultsContainer" role="presentation">
+                        <div class="esriRoutesContainer" data-dojo-attach-point="_resultsNode" role="presentation">
+                            <div class="esriClear"></div>
+                            <div class="esriResultsSummary" data-full-route="true" tabindex="0" role="document">
+                                <div class="esriImpedanceCost">02:51
+                                    <div class="esriImpedanceCostHrMin">
+                                        <div class="esriImpedanceCostHr">hr</div>
+                                        <div class="esriImpedanceCostMin">min</div>
+                                    </div>
+                                </div>
+                                <div class="esriOtherCosts">
+                                    <div class="esriTrafficLabel esriTrafficLabelHidden">No Traffic info</div>3 hr 3 min typically<br>209.51 kilometers
+                                </div>
+                            </div>
+                            <div class="esriClear"></div>
+                            <div class="esriRoutes">
+                                <table summary="13872 — مسجد الجله">
+                                    <tbody role="menu">
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTDepart esriDMTStopOrigin esriRouteZoom" data-segment="0">
+                                        <td class="esriRouteIconColumn"><div class="esriRouteIcon">1</div></td><td class="esriRouteTextColumn">
+                                        <div class="esriRouteInfo">
+                                            <div class="esriRouteText"><strong>1.</strong> Start at<strong>&nbsp;13872&nbsp;</strong>
+                                                <div class="esriRouteTextColumnCumulative"></div>
+                                            </div>
+                                            <div class="esriRouteLength">23:11 GMT+0300</div>
+                                        </div>
+                                    </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTStraight esriRouteZoom" data-segment="1">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>2.</strong> Go east</div>
+                                                <div class="esriRouteLength">4.07 km&nbsp;·<wbr>&nbsp;12 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTSharpRight esriRouteZoom" data-segment="2">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>3.</strong> Make a sharp right on<strong>&nbsp;522&nbsp;</strong><strong>&nbsp;طريق الدمام القديمة&nbsp;</strong></div>
+                                                <div class="esriRouteLength">53.27 km&nbsp;·<wbr>&nbsp;44 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTTurnLeft esriRouteZoom" data-segment="3">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>4.</strong> Turn left at<strong>&nbsp;522&nbsp;</strong>شرق /<strong>&nbsp;طريق خريص&nbsp;</strong>to stay on<strong>&nbsp;522&nbsp;</strong><strong>&nbsp;طريق خريص&nbsp;</strong></div>
+                                                <div class="esriRouteLength">21.39 km&nbsp;·<wbr>&nbsp;20 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTRampLeft esriRouteZoom" data-segment="4">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>5.</strong> Take the exit on the left to merge onto the highway toward<strong>&nbsp;الخرج / Al Kharj / وسط الرياض / Ar Riyadh Center&nbsp;</strong></div>
+                                                <div class="esriRouteLength">25.98 km&nbsp;·<wbr>&nbsp;20 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTStraight esriRouteZoom" data-segment="5">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>6.</strong> Take the exit to merge onto<strong>&nbsp;طريق جدة&nbsp;</strong><strong>&nbsp;Jeddah Road&nbsp;</strong></div>
+                                                <div class="esriRouteLength">5.69 km&nbsp;·<wbr>&nbsp;4 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTStraight esriRouteZoom" data-segment="6">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>7.</strong> Go forward on<strong>&nbsp;40 غرب&nbsp;</strong><strong>&nbsp;طريق جدة&nbsp;</strong></div>
+                                                <div class="esriRouteLength">73.93 km&nbsp;·<wbr>&nbsp;53 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTRampRight esriRouteZoom" data-segment="7">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo"><div class="esriRouteText"><strong>8.</strong> Take exit<strong>&nbsp;862&nbsp;</strong>on the right toward<strong>&nbsp;الجافورة / Al Jaforah / العتادية / Al Anadiyah / السالمية&nbsp;</strong></div>
+                                                <div class="esriRouteLength">0.35 km</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTStraight esriRouteZoom" data-segment="8">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon"></div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>9.</strong> Merge onto<strong>&nbsp;40 غرب&nbsp;</strong><strong>&nbsp;م80&nbsp;</strong></div>
+                                                <div class="esriRouteLength">24.83 km&nbsp;·<wbr>&nbsp;18 min</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr tabindex="0" role="menuitem" class="esriRoute esriDMTStop esriDMTStopDestination undefined esriRouteZoom" data-segment="9">
+                                        <td class="esriRouteIconColumn">
+                                            <div class="esriRouteIcon">2</div>
+                                        </td>
+                                        <td class="esriRouteTextColumn">
+                                            <div class="esriRouteInfo">
+                                                <div class="esriRouteText"><strong>10.</strong> Finish at<strong>&nbsp;مسجد الجله&nbsp;</strong> on the right<div class="esriRouteTextColumnCumulative">209.51 km · 2 hr 51 min<br></div></div>
+                                                <div class="esriRouteLength">02:02 GMT+0300</div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                                <div class="esriPrintFooter lastFocusNode" tabindex="0">Use subject to Esri
+                                    <a href="http://www.esri.com/legal/software-license" target="_blank">Terms of Use</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-dojo-attach-point="progress" class="progress hidden"></div>
+        <div class="jimu-loading-indicator jimu-agol-loading" id="jimu_dijit_LoadingIndicator_2" hidden="" widgetid="jimu_dijit_LoadingIndicator_2" style="display: none; width: 100%; height: 100%;">
+            <div class="loading-container">
+                <div data-dojo-attach-point="loadingNode" class="img-div"></div>
+            </div>
+        </div>
+        <div data-dojo-attach-point="StartPoint"></div>
+        <div data-dojo-attach-point="StopPoint"></div>
+    </div>
+</div>
